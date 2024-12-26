@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "a2349560-8378-4551-8521-55b73020c2cd",
+		"name": "RBAC Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3752514"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/posts/a-proxima-crise",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "role",
+						"value": "reader",
+						"type": "text"
+					},
+					{
+						"key": "entities",
+						"value": "users",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/posts/a-proxima-crise",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"a-proxima-crise"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,6 @@
+const clc = require("cli-color")
+global.fault = (...f) => console.error(clc.red(f))
+global.warning = (...w) => console.error(clc.yellow(w))
+global.info = (...i) => console.log(clc.blue(i))
+global.debug = (...d) => console.log(clc.green(d))
+global.white = (...w) => console.log(clc.white(w))
